@@ -136,15 +136,17 @@
     <div class="section-title">Professional Experience</div>
 
     <div class="card">
-        <h3>Maria Comprinha — AI-Powered Customer Service Platform</h3>
+        <h3>Maria Comprinha — AI Shopping Assistant (PWA)</h3>
         <p><strong>2025 – Present</strong> | Founder & Developer</p>
-        <p>Building a multi-tenant AI customer service platform: a single Fastify backend serving three independent Next.js front-ends — a client PWA with OTP login and chat, a superadmin panel, and a public signup form.</p>
-        <p>- Provider-agnostic AI layer (Anthropic, OpenAI, Gemini, Qwen) with prompts, models and API keys configurable from the admin panel, not hardcoded in env vars</p>
-        <p>- Real-time message delivery via WebSocket and Web Push</p>
-        <p>- In-memory queue with limited concurrency for AI request processing</p>
+        <p>AI-powered shopping assistant delivered as an installable PWA: the user chats with the assistant describing what they want to buy, and it searches Shopee for the best match, returning an affiliate link. Access is gated by pre-registration.</p>
+        <p>- Single Fastify backend serving three independent Next.js front-ends: the client PWA (OTP login + chat), a superadmin panel, and a public signup form</p>
+        <p>- Provider-agnostic AI layer (Anthropic, OpenAI, Gemini, Qwen) with prompt, model and API keys configurable from the admin panel at runtime, no redeploy needed and keys never exposed back to the browser</p>
+        <p>- Real-time message delivery via WebSocket, falling back to Web Push when the app is closed</p>
+        <p>- In-memory job queue with global concurrency limit plus per-user serialization</p>
+        <p>- Coin-based rewards system with an append-only ledger (balance always derived from transactions, never a cached field) and a monthly-resetting currency</p>
         <p>- Self-hosted Supabase (PostgreSQL + PostgREST) with a versioned schema/migrations pipeline</p>
         <p><strong>Technologies:</strong> Node 22 (ESM), Fastify, Supabase self-hosted (PostgreSQL + PostgREST), Next.js (3 independent apps), WebSocket, Web Push</p>
-        <p><a href="https://mariacomprinha.com/ajuda/entrar" target="_blank">View Live →</a></p>
+        <p><a href="https://mariacomprinha.com" target="_blank">View Live →</a></p>
     </div>
 
     <div class="card">
