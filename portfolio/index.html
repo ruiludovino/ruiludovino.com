@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rui Ludovino - Full Stack Developer & Digital Entrepreneur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAFAF9;
+            --text: #1A1A1A;
+            --text-secondary: #5C5C5C;
+            --border: #E5E4E1;
+            --card-bg: #FFFFFF;
+            --highlight: #25D366;
+            --font-display: 'Fraunces', serif;
+            --font-body: 'Sora', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 1.25rem 2.5rem;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(250, 250, 249, 0.95);
+            backdrop-filter: blur(16px);
+        }
+        nav.scrolled { border-bottom: 1px solid var(--border); }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-weight: 700; font-size: 1.45rem;
+            text-decoration: none; color: var(--text);
+        }
+
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-secondary); font-weight: 500; }
+
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            padding: 8rem 2.5rem 4rem;
+            max-width: 1200px; margin: 0 auto;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 700; line-height: 1.05;
+        }
+        .hero .highlight { color: var(--highlight); }
+
+        .hero-description {
+            font-size: 1.22rem; color: var(--text-secondary);
+            max-width: 680px; margin: 1.8rem 0 2.8rem;
+        }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 0.95rem 2.2rem; border-radius: 100px;
+            text-decoration: none; font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: var(--text); color: white;
+        }
+        .btn-primary:hover { transform: translateY(-4px); }
+
+        section { padding: 6rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+    <a href="#" class="nav-logo">
+        <img src="LogoRLVermelho.png" alt="Rui Ludovino Logo" style="height: 45px; vertical-align: middle;">
+    </a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Rui Ludovino</h1>
+        <h1 style="margin-top:-15px;">Full Stack Developer & Digital Entrepreneur</h1>
+        <p class="hero-description">
+            Portuguese developer with more than 30 years of experience building digital products, 
+            sales funnels, email marketing systems and automation tools.
+        </p>
+        <a href="#projects" class="btn btn-primary">View My Work →</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-title">About Me</div>
+    <div class="card">
+        <p style="font-size:1.15rem; line-height:1.85;">
+            I am a Full Stack Developer and Entrepreneur with extensive experience in digital marketing 
+            and sales systems. I combine strong technical skills — especially <strong>Python, PHP, Databases & SQL</strong> — 
+            with real-world expertise in copywriting, email marketing, high-converting sales funnels, 
+            and automation.
+        </p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="section-title">Professional Experience</div>
+    
+    <div class="card">
+        <h3>Digital Marketing & Sales Funnels Expert</h3>
+        <p><strong>2025 – Present</strong> | Co-founder of IgnicaoMarketing.com</p>
+        <p>Developing a complete affiliate management platform featuring an integrated CRM, 
+        WhatsApp automation (via Chrome extensions), course delivery system, and lead management. 
+        Responsible for sales funnel architecture, copywriting, WhatsApp sales flows, Meta Ads campaigns for lead generation.</p>
+        
+        <br>
+        
+        <p><strong>2012 – 2022</strong> | Co-founder of VirtualMarketingPro.com</p>
+        <p>Created and launched more than <strong>100 digital products</strong>. Responsible for sales funnel architecture, 
+        copywriting, Video Sales, email marketing sequences, and automation flows.</p>
+    </div>
+
+    <div class="card">
+        <h3>Email Marketing & Copywriting</h3>
+        <p><strong>Since 2005</strong></p>
+        <p>Advanced user of Aweber and other platforms. Built and managed large email lists with complex automated campaigns.</p>
+    </div>
+
+    <div class="card">
+        <h3>High-Ticket Sales & Network Marketing</h3>
+        <p><strong>2002 – 2022</strong></p>
+        <p>Top performer in Herbalife, XanGo and ARIIX across multiple continents.</p>
+    </div>
+
+    <div class="card">
+        <h3>Software Development Director</h3>
+        <p><strong>1991 – 2003</strong> | Euromática, Lda (Portugal)</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="section-title">Key Projects</div>
+
+    <div class="card">
+        <h3>Gestão de Projetos — Multi-Team Project Management Platform</h3>
+        <p>Full-stack multi-team project management application with a Kanban board, bug tracking, a Markdown knowledge base and an encrypted credentials vault — all inside the same product.</p>
+        <p>- Multi-project management with members, roles (Admin / Developer / Viewer) and permission-based access control</p>
+        <p>- Bug tracking with priority, status, labels, comments and attachments (sequential IDs like BUG-1)</p>
+        <p>- Kanban task board with drag-and-drop, subtasks, deadlines and assignee management</p>
+        <p>- Credentials vault with passwords encrypted using AES-256-GCM (never stored in plain text), including cost/billing-cycle tracking</p>
+        <p>- Markdown knowledge base with folders, note versioning and pinning</p>
+        <p>- GitHub integration (OAuth, repository linking, issues and PRs attached to tasks/bugs)</p>
+        <p>- Internal notifications and per-project activity log</p>
+        <p>- Email invitations for new members, with password-based registration or GitHub login</p>
+        <p>- Global search and user profile</p>
+        <p><strong>Technologies:</strong> Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 4, Base UI, shadcn components, dnd-kit, react-markdown, Next.js Server Actions, Zod, Auth.js (NextAuth v5) with GitHub OAuth and credentials login (bcrypt), PostgreSQL (Neon) via Prisma ORM, Vercel Blob, Resend, AES-256-GCM encryption. Deployed on Vercel with Neon Postgres.</p>
+        <p><a href="https://github.com/ruiludovino/gestao-projetos" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://ignicaomarketing.com" target="_blank">IgnicaoMarketing.com</a></h3>
+        <p>Complete affiliate management platform with integrated CRM, WhatsApp automation via Chrome extensions, 
+        course delivery system, sales funnels, automatic webinars platform and lead management with Meta Ads integration. (project in php, js, html, SQL)</p>
+        <p><strong>Test Account:</strong> <a href="https://ignicaomarketing.com/afiliados/public/login.php" target="_blank">Login as Affiliate (Test User)</a> - <strong>User:</strong> teste@teste.com <strong>Pwd:</strong> 123456</p>
+    </div>
+
+    <div class="card">
+        <h3>Autozap – WhatsApp Sales Funnels</h3>
+        <p>Complete Bot platform for building automated sales funnels on WhatsApp (Python backend).</p>
+        <p><a href="https://www.youtube.com/playlist?list=PLNrgxszSh63D0P7RJ0V7MYzvCWzDJHQoe" target="_blank">View Program Videos (Configuration)→</a></p>
+        <p><a href="https://www.youtube.com/watch?v=XlBsefTBEJ8&list=PLNrgxszSh63DbnQ_1YRDmPoOZKqgigm0c&pp=sAgC" target="_blank">View Program Videos (Conversation Bot)→</a></p>
+        <p><a href="https://github.com/ruiludovino/AutoZapV2-Whatsapp" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>RifaZap</a></h3>
+        <p>Complete Online raffle platform. (project in php, js, html, SQL)</p>
+        <p>- Built a full-stack raffle platform with raffle CRUD, database-level concurrency-safe ticket reservation, and a simulated Pix checkout engineered to be swapped for a real payment gateway without rewriting business logic</p>
+        <p>- Implemented role-based authentication (buyer/organizer/admin) with NextAuth, Server Actions, and middleware-based route protection</p>
+        <p>- Designed a draw engine with two methods (platform-random or Federal Lottery result), publicly displaying results for transparency</p>
+        <p>- Built a platform admin panel with cross-organizer metrics, user role management, and raffle moderation</p>
+        <p>- Added a live-polling sales dashboard for organizers</p>
+        <p>- Modeled the relational schema (10 models) in Prisma/PostgreSQL and led a mobile responsiveness audit</p>
+        <p><strong>Technologies:</strong> Next.js 16, TypeScript, PostgreSQL, Prisma 7, NextAuth v5, Tailwind CSS, Docker</p>
+        <p><a href="https://github.com/ruiludovino/rifazap" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>OrganizeMyLife</h3>
+        <p>Comprehensive personal organization application for Android and iOS platforms.</p>
+        <p>Key features: Secure user registration and login system, Agenda and Calendar for scheduling appointments and events, Configurable reminders with push notifications, Task list management (add, edit, mark complete, categorize), Financial control module for expenses and income with categorization, Performance graphs for tracking progress on goals, habits and finances, Secure and efficient cloud synchronization across devices.</p>
+        <p>Modern, clean and intuitive design with focus on excellent user experience. High quality, clean, scalable and maintainable code.</p>
+        <p><strong>Technologies:</strong> Technologies: Flutter 3, Dart 3.4, Firebase Firestore, Firebase Authentication, Firebase Cloud Messaging, Firebase Cloud Functions (Node.js 20), Riverpod 2 (state management), go_router 14, fl_chart, table_calendar, flutter_local_notifications</p>
+        <p><a href="https://github.com/ruiludovino/OrganizeMyLife" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>Telegram bot</h3>
+        <p>Complete Bot do manage the members access to a paid group in Telegram.</p>
+        <p><a href="https://github.com/ruiludovino/MembersTelegramBot" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>VirtualChef</h3>
+        <p>Python bot developed to receive and manage orders for restaurants via API.</p>
+        <p><a href="https://www.youtube.com/watch?v=PbepFT4aUWc&list=PLNrgxszSh63BylrLsHEE8v7g_sXjo-5P9&pp=sAgC" target="_blank">View My Program Videos →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>ShopMaster</h3>
+        <p>Python bot developed to receive and manage orders for any type of store via API.</p>
+        <p><a href="https://www.youtube.com/watch?v=MymaAbIXN20&list=PLNrgxszSh63D_-4LdPeB8YV52N1zhofDV&pp=sAgC" target="_blank">View My Program Videos →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>AI YouTube Content Automation System</h3>
+        <p>Python application that automatically generates complete YouTube videos using AI tools and APIs.</p>
+        <p><a href="https://www.youtube.com/@Civilization-Sagas" target="_blank">View Channel 1→</a></p>
+        <p><a href="https://www.youtube.com/@Saga-Das-Civilizacoes" target="_blank">View Channel 2→</a></p>
+        <p><a href="https://www.youtube.com/@TinyTalesTVPro" target="_blank">View Channel 3→</a></p>
+        <p><a href="https://www.youtube.com/@Tiny-Tales-TVForChildren" target="_blank">View Channel 4→</a></p>
+        <p><a href="https://ruiludovino.com/portfolio/AutoTubeCreator.html#details" target="_blank">Full description Here→</p>
+    </div>
+
+    <div class="card">
+        <h3>Audible Scraper</h3>
+        <p>Python bot to scrape audiobook information (title, author, narrator, duration, release date, rating, price, etc.) from Audible.com.br with resume capability and anti-detection.</p>
+        <p><strong>Technologies:</strong> Python, SeleniumBase, UC Mode</p>
+        <p><a href="https://github.com/ruiludovino/audible-scraper" target="_blank">View on GitHub →</a></p>
+    </div>
+
+    <div class="card">
+        <h3>PremiumApps.com</h3>
+        <p>Digital products platform (Full backend developed in Python with SQL databases).</p>
+    </div>
+
+    <div class="card">
+        <h3>VirtualMarketingPro.com</h3>
+        <p>Affiliate Marketing Platform To Sell Virtual Products with integrated sales funnels, email marketing and members area.</p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-title">Let's Work Together</div>
+    <div class="card">
+        <p style="font-size:1.2rem;">
+            Open to freelance projects in automation, sales funnels, email marketing systems, databases and AI integrations.
+        </p>
+        <br>
+        <p><strong>Email:</strong> Rui.j.ludovino@gmail.com</p>
+        <br>
+        <a href="https://wa.me/351935017767" class="btn btn-primary" target="_blank">Message me on WhatsApp →</a>
+    </div>
+</section>
+
+<script>
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+</script>
+
+</body>
+</html>

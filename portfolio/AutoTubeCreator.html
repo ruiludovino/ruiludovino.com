@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI YouTube Content Automation System | Rui Ludovino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAFAF9;
+            --text: #1A1A1A;
+            --text-secondary: #5C5C5C;
+            --border: #E5E4E1;
+            --card-bg: #FFFFFF;
+            --highlight: #25D366;
+            --font-display: 'Fraunces', serif;
+            --font-body: 'Sora', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 1.25rem 2.5rem;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(250, 250, 249, 0.95);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-weight: 700; font-size: 1.45rem;
+            text-decoration: none; color: var(--text);
+        }
+
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-secondary); font-weight: 500; }
+
+        .hero {
+            min-height: 70vh; display: flex; align-items: center;
+            padding: 8rem 2.5rem 4rem;
+            max-width: 1200px; margin: 0 auto;
+            background: linear-gradient(135deg, #f8f8f6 0%, #f0f0eb 100%);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            font-weight: 700; line-height: 1.05;
+        }
+
+        .hero .highlight { color: var(--highlight); }
+
+        .hero-description {
+            font-size: 1.25rem; color: var(--text-secondary);
+            max-width: 720px; margin: 1.8rem 0 2.8rem;
+        }
+
+        section { padding: 6rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-tag {
+            background: #f1f1ef;
+            color: #444;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .channels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .channel-item {
+            flex: 1 1 300px;
+        }
+
+        .channels a {
+            color: var(--highlight);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--highlight);
+            color: white;
+            padding: 1rem 2.2rem;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        ul {
+            font-size: 1.08rem;
+            line-height: 1.9;
+            padding-left: 1.4rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="#" class="nav-logo">
+        <img src="LogoRLVermelho.png" alt="Rui Ludovino Logo" style="height: 45px; vertical-align: middle;">
+    </a>
+    <div class="nav-links">
+        <a href="index.html">← Back to Portfolio</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>AI YouTube Content<br>Automation System</h1>
+        <p class="hero-description">
+            A complete Python system that automatically generates, produces, and publishes 
+            professional YouTube videos using multiple AI technologies.
+        </p>
+        <a href="#details" class="btn">See Project Details ↓</a>
+    </div>
+</section>
+
+<!-- DETAILS -->
+<section id="details">
+    <div class="section-title">Project Overview</div>
+    
+    <div class="card">
+        <p style="font-size:1.18rem; line-height:1.85;">
+            I built a complete end-to-end automation system in Python that streamlines the entire YouTube content creation process using artificial intelligence. 
+            The system generates scripts, creates audio narration, produces videos, optimizes metadata, and uploads content directly to YouTube with minimal manual intervention. 
+            It manages multiple channels across different niches and combines several AI tools into one unified workflow.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Core AI Capabilities</h3>
+        <ul>
+            <li><strong>Script Generation</strong> — Powered by Grok API (xAI API)</li>
+            <li><strong>Voice Narration</strong> — High-quality natural voices via Local Text-to-Speech API</li>
+            <li><strong>Video Creation</strong> — Full video generation using Grok Imagine via a Selenium bot</li>
+            <li><strong>SEO Optimization</strong> — Automatic creation of titles, descriptions and tags</li>
+            <li><strong>Multilingual Support</strong> — Translation and adaptation for multiple languages</li>
+            <li><strong>Direct YouTube Upload</strong> — Automated metadata publishing</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Managed YouTube Channels</h3>
+        <div class="channels">
+            <div class="channel-item">
+                <strong><a href="https://www.youtube.com/@TinyTalesTVPro" target="_blank">Tiny Tales TV Songs</a></strong><br>
+                <span style="color: var(--text-secondary);">Children’s songs</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="https://www.youtube.com/@Tiny-Tales-TVForChildren" target="_blank">Tiny Tales TV Tales</a></strong><br>
+                <span style="color: var(--text-secondary);">Children’s stories</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="https://www.youtube.com/@Civilization-Sagas" target="_blank">Civilization Sagas</a></strong><br>
+                <span style="color: var(--text-secondary);">Mystery and hidden history content</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="https://www.youtube.com/@Saga-Das-Civilizacoes" target="_blank">Saga Das Civilizações</a></strong><br>
+                <span style="color: var(--text-secondary);">Mystery and hidden history content (Portuguese)</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="https://www.youtube.com/channel/UCocnwk-rGLsu1ru7EQjpGSA" target="_blank">EQM – Experiências de Quase-Morte</a></strong><br>
+                <span style="color: var(--text-secondary);">Near-Death Experiences</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="#" target="_blank">Curiosidades Ocultas</a></strong><br>
+                <span style="color: var(--text-secondary);">Hidden curiosities</span>
+            </div>
+            <div class="channel-item">
+                <strong><a href="#" target="_blank">Filosofia Humana</a></strong><br>
+                <span style="color: var(--text-secondary);">Human Philosophy</span>
+            </div>
+        </div>
+    </div>x
+
+    <div class="card">
+        <h3>Key Features</h3>
+        <ul>
+            <li><strong>Full AI-Driven Content Creation</strong> — Script generation, natural voice narration, and video production</li>
+            <li><strong>Intuitive Graphical Interface (Tkinter)</strong> — Central dashboard with real-time status monitoring and logging</li>
+            <li><strong>Batch Processing</strong> — Create multiple videos at once</li>
+            <li><strong>YouTube Optimization & Automation</strong> — SEO-optimized titles, descriptions, tags + one-click upload</li>
+            <li><strong>Multilingual Support</strong> — Automatic translation and adaptation</li>
+            <li><strong>Project Management Tools</strong> — Tracking tables, smart paragraph management, conversation history</li>
+            <li><strong>Integrated Utilities</strong> — Video downloader, folder management, language selector with copy-to-clipboard</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Technologies Used</h3>
+        <div class="tech-stack">
+            <span class="tech-tag">Python 3</span>
+            <span class="tech-tag">Grok API (xAI)</span>
+            <span class="tech-tag">Grok Imagine</span>
+            <span class="tech-tag">Local TTS API</span>
+            <span class="tech-tag">YouTube Data API</span>
+            <span class="tech-tag">Tkinter GUI</span>
+            <span class="tech-tag">Multithreading</span>
+            <span class="tech-tag">JSON Processing</span>
+            <span class="tech-tag">pyperclip</span>
+            <span class="tech-tag">Regex</span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER / CONTACT -->
+<section style="text-align:center; padding:6rem 2.5rem; background:#f5f5f2;">
+    <p style="font-size:1.18rem; max-width:800px; margin:0 auto 2.5rem; color:var(--text-secondary);">
+        This system transformed content creation from a manual, time-consuming process into a fast, scalable and consistent AI-powered pipeline, allowing professional YouTube content to be produced efficiently across multiple channels.
+    </p>
+    <a href="https://wa.me/351935017767" class="btn" target="_blank">Discuss a Similar Project →</a>
+</section>
+
+</body>
+</html>
