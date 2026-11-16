@@ -411,29 +411,68 @@
         <div class="timeline-item current reveal">
             <div class="timeline-date">2025 - Present</div>
             <div class="timeline-head">
-                <div class="logo-badge logo-badge--sm"><img src="logos/MariaComprinha.png" alt="MariaComprinha.com logo"></div>
-                <h3>MariaComprinha.com</h3>
+                <div class="logo-badge logo-badge--sm"><img src="logos/MariaComprinha.png" alt="SmartShop App logo"></div>
+                <h3>SmartShop App</h3>
             </div>
-            <p class="role">Co-Founder & Developer · AI Shopping Assistant (PWA)</p>
-            <p class="desc">AI-powered shopping assistant delivered as an installable PWA: the user chats with the assistant describing what they want to buy, and it searches Shopee for the best match, returning an affiliate link. Access is gated by pre-registration.</p>
+            <p class="role">Co-Founder & Developer · AI Shopping Assistant with Cashback</p>
+            <p class="desc">AI-powered shopping assistant that finds the lowest price for a product across marketplaces (Shopee, Amazon, AliExpress) from a text description or a photo, and gives the customer part of the purchase back as cashback.</p>
             <div class="feature-grid">
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>Single Fastify backend serving three independent Next.js front-ends: the client PWA (OTP login + chat), a superadmin panel, and a public signup form</div>
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>Provider-agnostic AI layer (Anthropic, OpenAI, Gemini, Qwen) with prompt, model and API keys configurable from the admin panel at runtime, no redeploy needed and keys never exposed back to the browser</div>
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>Real-time message delivery via WebSocket, falling back to Web Push when the app is closed</div>
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>In-memory job queue with global concurrency limit plus per-user serialization</div>
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>Coin-based rewards system with an append-only ledger (balance always derived from transactions, never a cached field) and a monthly-resetting currency</div>
-                <div class="feature-item"><i class="ph ph-arrow-right"></i>Self-hosted Supabase (PostgreSQL + PostgREST) with a versioned schema/migrations pipeline</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Product search through an AI chat, by text or by photo</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Price comparison across multiple marketplaces</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Cashback on purchases made through the app's links</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Native app for Android and iOS, plus a web version</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Share a product from another app straight to SmartShop, which looks for a better price</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Customer tiers, achievements and coupons to drive repeat purchases</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Push notifications and curated deals</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Interface in Portuguese, English and Spanish</div>
             </div>
             <div class="pill-row">
-                <span class="tech-pill">Node 22 (ESM)</span>
-                <span class="tech-pill">Fastify</span>
-                <span class="tech-pill">Supabase self-hosted</span>
+                <span class="tech-pill">React Native (Expo)</span>
                 <span class="tech-pill">Next.js</span>
-                <span class="tech-pill">WebSocket</span>
-                <span class="tech-pill">Web Push</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js (Fastify)</span>
+                <span class="tech-pill">PostgreSQL (Supabase)</span>
+                <span class="tech-pill">Anthropic Claude</span>
+                <span class="tech-pill">OpenAI</span>
+                <span class="tech-pill">Google Gemini</span>
+                <span class="tech-pill">Qwen</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Caddy</span>
             </div>
             <div class="link-row">
-                <a href="https://mariacomprinha.com" target="_blank" class="link-chip"><i class="ph ph-arrow-up-right"></i>View Live</a>
+                <a href="https://smartshopapp.online" target="_blank" class="link-chip"><i class="ph ph-arrow-up-right"></i>View Live</a>
+            </div>
+        </div>
+
+        <div class="timeline-item current reveal">
+            <div class="timeline-date">2025 - Present</div>
+            <h3>CashHub</h3>
+            <p class="role">Co-Founder & Developer · SmartShop Management & Affiliate Platform</p>
+            <p class="desc">Management platform for the SmartShop ecosystem, with an admin panel to run the business and a dashboard for affiliates who promote the app and earn commission on the network they refer.</p>
+            <div class="feature-grid">
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Affiliate dashboard with FREE, PRO and Premium plans, a tree view of the referral network and a commission statement</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Kanban CRM for affiliates to track their leads, opening the conversation in WhatsApp Web through a custom browser extension</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Automatic lead distribution among affiliates ("wheels"), weighted by each one's number of positions</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Landing pages and automated email flows (Mautic integration)</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Reconciliation of marketplace commissions and monthly financial closing</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>AI providers and marketplaces configured from the panel, with no redeploy needed</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Management of coupons, prizes, achievements, live sessions and per-page help videos</div>
+                <div class="feature-item"><i class="ph ph-arrow-right"></i>Interface in Portuguese, English and Spanish</div>
+            </div>
+            <div class="pill-row">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">next-intl</span>
+                <span class="tech-pill">Node.js (Fastify)</span>
+                <span class="tech-pill">PostgreSQL (Supabase)</span>
+                <span class="tech-pill">Mautic</span>
+                <span class="tech-pill">Chrome Extension</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Caddy</span>
+                <span class="tech-pill">GitHub Actions</span>
+            </div>
+            <div class="link-row">
+                <a href="https://cashhub.business" target="_blank" class="link-chip"><i class="ph ph-arrow-up-right"></i>View Live</a>
             </div>
         </div>
 
